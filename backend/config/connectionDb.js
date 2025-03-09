@@ -1,7 +1,7 @@
 const mongoose=require("mongoose")
 
 const connectDb=async()=>{
-    await mongoose.connect(process.env.CONNECTION_STRING)
+    await mongoose.connect("mongodb+srv://pranav27borse:4NhqrY9yLj0vyDx1@recipe.dvuho.mongodb.net/?retryWrites=true&w=majority&appName=Recipe")
     .then(()=>console.log("connected..."))
 }
 
